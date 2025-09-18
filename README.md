@@ -31,8 +31,8 @@ W. Wallace McDowell Award | 1968
 Seymour Cray zemřel v roce 1996, ale jeho odkaz žije dál. Jméno Cray se stalo synonymem pro superpočítače a jeho přístupy k návrhu architektur inspirovaly generace inženýrů a výzkumníků.
 
 Pro více informací můžeš navštívit:
-- [Cray-History.net – kompletní historie Cray](https://cray-history.net/) :contentReference[oaicite:2]{index=2}  
-- [Oficiální stránky HPE / Cray](https://www.hpe.com/us/en/compute/hpc/cray.html) :contentReference[oaicite:3]{index=3}  
+- [Cray-History.net – kompletní historie Cray](https://cray-history.net/) 
+- [Oficiální stránky HPE / Cray](https://www.hpe.com/us/en/compute/hpc/cray.html)
 
 ---
 
