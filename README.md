@@ -1,6 +1,6 @@
 # Seymour Cray: Otec superpočítačů
 
-Seymour Cray byl americký inženýr a designér počítačů, který je považován za „otce superpočítačů“. Jeho práce zásadně ovlivnila oblast vysokovýkonného výpočetnictví a umožnila pokroky v oblastech jako je vědecký výzkum, meteorologie, jaderná fyzika či simulace složitých systémů.  
+Seymour Cray byl americký inženýr a designér počítačů, který je považován za „otce superpočítačů“. Jeho práce zásadně ovlivnila oblast vysokovýkonného výpočetnictví a umožnila pokroky v oblastech jako je vědecký výzkum, meteorologie, jaderná fyzika či simulace složitých systémů.
 
 Už od mládí projevoval zájem o elektrotechniku a výpočetní techniku. V 50. letech začal pracovat pro společnost Engineering Research Associates (ERA), kde se podílel na vývoji prvních elektronkových počítačů. Později spoluzaložil firmu Control Data Corporation (CDC), kde navrhl legendární **CDC 6600** – počítač, který byl v 60. letech považován za první skutečný superpočítač.
 
@@ -9,8 +9,8 @@ Už od mládí projevoval zájem o elektrotechniku a výpočetní techniku. V 50
 ### Klíčové přínosy a úspěchy
 - **CDC 6600 (1964):** Považován za první superpočítač, který překonal výkon všech tehdejších strojů a zůstal nejrychlejším na světě až do roku 1969.  
 - **Vysokorychlostní architektury:** Cray kladl důraz na zjednodušení návrhu, minimalizaci latencí a inovativní použití paralelismu.  
-- **Založení Cray Research (1972):** Společnost, která navrhla superpočítače **Cray-1**, **Cray-2** a další stroje, jež se staly ikonami high-performance computingu.  
-- **Cray-1 (1976):** Proslul nejen svou rychlostí, ale i charakteristickým zakřiveným designem, který usnadnil vedení kabeláže a zlepšil výkon.  
+- **Založení Cray Research (1972):** Společnost, která navrhla superpočítače **Cray-1**, **Cray-2** a další stroje, jež se staly ikonami high-performance computingu. :contentReference[oaicite:0]{index=0}  
+- **Cray-1 (1976):** Proslul nejen svou rychlostí, ale i charakteristickým zakřiveným designem, který usnadnil vedení kabeláže a zlepšil výkon. :contentReference[oaicite:1]{index=1}  
 
 ---
 
@@ -28,9 +28,11 @@ W. Wallace McDowell Award | 1968
 
 ---
 
-Seymour Cray zemřel v roce 1996, ale jeho odkaz žije dál. Jméno Cray se stalo synonymem pro superpočítače a jeho přístupy k návrhu architektur inspirovaly generace inženýrů a výzkumníků.  
+Seymour Cray zemřel v roce 1996, ale jeho odkaz žije dál. Jméno Cray se stalo synonymem pro superpočítače a jeho přístupy k návrhu architektur inspirovaly generace inženýrů a výzkumníků.
 
-Pro více informací můžete navštívit [Cray Research – historie](https://www.cray.com/company/about-cray).
+Pro více informací můžeš navštívit:
+- [Cray-History.net – kompletní historie Cray](https://cray-history.net/) :contentReference[oaicite:2]{index=2}  
+- [Oficiální stránky HPE / Cray](https://www.hpe.com/us/en/compute/hpc/cray.html) :contentReference[oaicite:3]{index=3}  
 
 ---
 
