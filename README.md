@@ -9,8 +9,8 @@ Už od mládí projevoval zájem o elektrotechniku a výpočetní techniku. V 50
 ### Klíčové přínosy a úspěchy
 - **CDC 6600 (1964):** Považován za první superpočítač, který překonal výkon všech tehdejších strojů a zůstal nejrychlejším na světě až do roku 1969.  
 - **Vysokorychlostní architektury:** Cray kladl důraz na zjednodušení návrhu, minimalizaci latencí a inovativní použití paralelismu.  
-- **Založení Cray Research (1972):** Společnost, která navrhla superpočítače **Cray-1**, **Cray-2** a další stroje, jež se staly ikonami high-performance computingu. :contentReference[oaicite:0]{index=0}  
-- **Cray-1 (1976):** Proslul nejen svou rychlostí, ale i charakteristickým zakřiveným designem, který usnadnil vedení kabeláže a zlepšil výkon. :contentReference[oaicite:1]{index=1}  
+- **Založení Cray Research (1972):** Společnost, která navrhla superpočítače **Cray-1**, **Cray-2** a další stroje, jež se staly ikonami high-performance computingu.
+- **Cray-1 (1976):** Proslul nejen svou rychlostí, ale i charakteristickým zakřiveným designem, který usnadnil vedení kabeláže a zlepšil výkon. 
 
 ---
 
