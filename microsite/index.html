@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Odvoz na letiště</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .hero {
             background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
             padding: 60px 0;
@@ -15,123 +19,270 @@
 
         .hero img {
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+        }
+
+        section {
+            scroll-margin-top: 90px;
         }
     </style>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+
+    <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" aria-label="Hlavní navigace">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">Odvoz na letiště</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#hero" aria-label="Domů">
+                <strong>Odvoz na letiště</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Přepnout navigaci">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">O nás</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Objednání</a>
-                    </li>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
 
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#o-nas">O nás</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nabidka-sluzeb">Nabídka služeb</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+                    <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="#kontakt">Rezervovat</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--Hero-->
-    <header id="hero" class="hero section-padding bg-ligh">
+    <!--hero-->
+    <header id="hero" class="hero">
         <div class="container">
             <div class="row gy-4 align-items-center">
-
                 <!--leva_cast-->
                 <div class="col-12 col-md-6">
                     <h1 class="display-5 fw-bold mb-3">Odvoz na letiště Praha</h1>
                     <p class="lead">
                         Spolehlivá přeprava z i na letiště — pohodlně, bezpečně a včas.
-                        Nabízíme non-stop služby, profesionální řidiče a férové ceny.
+                        Non-stop služby, profesionální řidiči a férové ceny.
                     </p>
                     <div class="d-flex gap-2 flex-wrap">
-                        <a class="btn btn-primary btn-lg" href="#objednavka">Objednat přepravu</a>
+                        <a class="btn btn-primary btn-lg" href="#kontakt">Objednat přepravu</a>
                         <a class="btn btn-outline-primary btn-lg" href="#o-nas">Zjistit více</a>
                     </div>
                     <p class="mt-3 small text-muted">
                         Praha a okolí • 24/7 provoz • Soukromé i firemní jízdy
                     </p>
                 </div>
-            </div>
-
-            <!--prava_cast-->
-            <div class="col-12 col-md-6">
-                <img src="https://thumbs.dreamstime.com/b/airplane-1431902.jpg"
-                    alt="Auto společnosti Odvoz na letiště zaparkované před terminálem" class="img-fluid rounded shadow"
-                    width="900" height="600">
+                <!--prava_cast-->
+                <div class="col-12 col-md-6">
+                    <img src="https://thumbs.dreamstime.com/b/airplane-1431902.jpg"
+                        alt="Vůz pro odvoz na letiště před terminálem" class="img-fluid rounded shadow" width="900"
+                        height="600">
+                </div>
             </div>
         </div>
     </header>
 
+    <!--O_nas-->
+    <section id="o-nas" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">O nás</h2>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat sapiente
+                        praesentium beatae. Sunt iure est iusto enim! Eveniet sequi ipsa, sapiente explicabo laborum
+                        magnam odit eius unde amet enim. Doloremque.</p>
+                </div>
+            </div>
 
-    <!--O nas-->
-    <div class="card">
-        <div class="card-body">
-            <h2>O nás</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione odio illo nesciunt corporis
-                possimus dolores, iusto in officia dolor modi minima fugiat vero quisquam odit eligendi voluptas
-                reprehenderit assumenda?</p>
-        </div>
-    </div>
+            <div class="row g-4">
+                <!--1_karta-->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://www.aaataxi.cz/wp-content/uploads/2018/02/1-letiste-aaa-taxi.jpg"
+                            class="card-img-top" alt="Naše vozy před letištěm">
+                        <div class="card-body">
+                            <h5 class="card-title">Naše mise</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci
+                                a voluptatem facere. Earum rerum laboriosam minus qui quibusdam dolorum sit ullam
+                                eligendi nulla modi! Quaerat eius pariatur accusamus quis.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">O nás</h5>
-                <p class="card-text">
-                    Poskytujeme spolehlivý odvoz z a na letiště. Naše služby jsou dostupné 24/7.
-                </p>
+                <!--karta_2-->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://picsum.photos/400/250?random=2" class="card-img-top"
+                            alt="Profesionální přístup">
+                        <div class="card-body">
+                            <h5 class="card-title">Proč my?</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto
+                                reprehenderit dicta non nemo ipsam quae numquam, voluptates accusantium omnis soluta
+                                nostrum assumenda debitis minus? Officia aspernatur ullam ipsam velit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--karta_3-->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://picsum.photos/400/250?random=3" class="card-img-top" alt="Naše hodnoty">
+                        <div class="card-body">
+                            <h5 class="card-title">Naše hodnoty</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nam,
+                                dolores recusandae distinctio doloribus quaerat laboriosam illum facere, similique error
+                                consectetur facilis suscipit, magnam iusto minima quidem dolor dicta. Eligen</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- <div class="card" style="width: 18rem;">
-        <img src="https://thumbs.dreamstime.com/b/airplane-1431902.jpg" class="card-img-top" alt="letadlo.jpg">
-        <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis, repellat
-                laborum, voluptatum ipsum consequatur in ullam quibusdam maxime rem sit assumenda eos corporis alias
-                sunt labore deleniti perspiciatis magnam.</p>
+    <!--nabidka_sluzeb-->
+    <section id="nabidka-sluzeb" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">Nabídka služeb</h2>
+                    <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit
+                        numquam hic id explicabo! Ipsa odit, aperiam delectus ab dolorum sint, voluptatibus vitae labore
+                        quod provident nihil tempore doloremque adipisci architecto.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Letiště ⇄ Praha</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam ut
+                                nesciunt nobis vero voluptatum excepturi iusto molestiae dolore unde dolores vel
+                                eligendi ex, adipisci soluta! In ratione tempore dolore.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Mimo Prahu</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+                                illo labore debitis ipsum, dolorum rem a rerum temporibus voluptatum facilis, ut dolor,
+                                quod molestias magnam odio qui neque pariatur! Voluptate!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Firemní přeprava</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                                voluptatum asperiores neque ipsum quo nemo nesciunt, hic mollitia enim beatae similique
+                                sapiente facere possimus molestiae delectus vero provident nostrum corporis..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div> -->
+    </section>
 
-    <!-- <div class="col-12 col-sm-6 col-md-4">
-        <div class="card h-100">
-            <img src="https://thumbs.dreamstime.com/b/airplane-1431902.jpg" class="card-img-top"
-                alt="Letadlo přistávající na letišti">
-            <div class="card-body">
-                <p class="card-text">
-                    Nabízíme pohodlné vozy, profesionální řidiče a garantovanou přesnost příjezdu.
-                </p>
+    <!-- GALERIE -->
+    <section id="galerie" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">Galerie</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit animi
+                        dolore illo eaque, alias odio accusamus voluptate. Culpa atque, labore exercitationem vitae nemo
+                        obcaecati minima laboriosam? Inventore, maiores fugit.</p>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid rounded" src="https://picsum.photos/600/400?random=11" alt="Galerie 1">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid rounded" src="https://picsum.photos/600/400?random=12" alt="Galerie 2">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid rounded" src="https://picsum.photos/600/400?random=13" alt="Galerie 3">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="img-fluid rounded" src="https://picsum.photos/600/400?random=14" alt="Galerie 4">
+                </div>
             </div>
         </div>
-    </div> -->
+    </section>
 
+    <!-- KONTAKT -->
+    <section id="kontakt" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">Kontakt & rezervace</h2>
+                    <p class="text-muted">Rezervujte si pohodlný odvoz na pár kliknutí.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Rychlý kontakt</h5>
+                            <p class="mb-1">Telefon: <a href="tel:+420123456789">+420 123 456 789</a></p>
+                            <p class="mb-1">E-mail: <a href="mailto:info@odvoznaletiste.cz">info@odvoznaletiste.cz</a>
+                            </p>
+                            <p class="mb-0">Provoz: Non-stop • Praha a okolí</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Rezervační formulář</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="jmeno" class="form-label">Jméno a příjmení</label>
+                                    <input type="text" class="form-control" id="jmeno" placeholder="Jan Novák" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="jan.novak@email.cz"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefon" class="form-label">Telefon</label>
+                                    <input type="tel" class="form-control" id="telefon" placeholder="+420 123 456 789"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="detaily" class="form-label">Detaily cesty</label>
+                                    <textarea class="form-control" id="detaily" rows="3"
+                                        placeholder="Datum, čas, odkud–kam, počet osob…"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Odeslat poptávku</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 border-top">
+        <div class="container text-center small text-muted">
+            © <span id="year"></span> Odvoz na letiště — Všechna práva vyhrazena
+        </div>
+    </footer>
+
+    <script>
+        // rok ve footeru
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
