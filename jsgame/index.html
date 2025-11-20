@@ -19,7 +19,7 @@
     <input id="guessBtn" type="button" value="Zkus">
 
     <p>
-        Počet pokusů<span id="attempts">0</span>
+        Počet pokusů: <span id="attempts">0</span>/10
     </p>
 
     <script>
@@ -28,7 +28,7 @@
 
         const maxAttempts = 10
 
-        const attemtpsE1 = document.getElementById('attempts')
+        const attemptsE1 = document.getElementById('attempts')
         const messageE1 = document.getElementById('message')
         const guessInput = document.getElementById('guess')
         const guessBtn = document.getElementById('guessBtn')
@@ -38,7 +38,7 @@
 
             secretNumber = Math.floor(Math.random() * 20) + 1
             attempts = 0
-            attemtpsE1.textContent = attemtps
+            attemptsE1.textContent = attempts
 
             messageE1.textContent = 'Hádej číslo od 1 do 20'
             messageE1.style.color = 'black'
@@ -70,21 +70,22 @@
                 return
             }
 
-            attemtps++
-            attemtpsE1.textContent = attemtps
+            attempts++
+            attemptsE1.textContent = attempts
 
-            console.log('pokus cislo: ', attemtps)
+            console.log('pokus cislo: ', attempts)
 
             if (guess === secretNumber) {
                 messageE1.textContent = 'Vyhrál jsi.'
-                console.log('hrac vyhral')
+                console.log('hrac vyhral, tajne cislo bylo: ', secretNumber)
                 endGame(true)
                 return
             }
 
-            if (attemtps >= maxAttempts) {
+            if (attempts >= maxAttempts) {
                 messageE1.textContent = 'Došli ti pokusy'
                 console.log('dosli pokusy - hrac prohral')
+                endGame(false)
                 return
             }
 
@@ -119,4 +120,5 @@
 
     </script>
 </body>
+
 </html>
