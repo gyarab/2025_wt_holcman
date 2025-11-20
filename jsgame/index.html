@@ -9,57 +9,114 @@
 
 <body>
     <h1>JS Game</h1>
-    <p>Hadej cislo od 1 do 20</p>
+    <p id="message">
+        Hádej číslo od 1 do 20
+    </p>
 
-    <input id="newGamebtn" type="button" value="Nova hra" onclick="newGame(); support()">
+    <input id="newGamebtn" type="button" value="Nová hra" onclick="newGame(); support()">
     <br>
     <input id="guess" type="number" name="guess">
     <input id="guessBtn" type="button" value="Zkus">
 
     <p>
-        Pocet pokusu <span id="attempts">0</span>
+        Počet pokusů<span id="attempts">0</span>
     </p>
 
     <script>
         let secretNumber
-        let attemtps
+        let attempts
 
+        const maxAttempts = 10
 
         const attemtpsE1 = document.getElementById('attempts')
+        const messageE1 = document.getElementById('message')
+        const guessInput = document.getElementById('guess')
+        const guessBtn = document.getElementById('guessBtn')
 
         function newGame() {
+            support()
+
             secretNumber = Math.floor(Math.random() * 20) + 1
             attempts = 0
             attemtpsE1.textContent = attemtps
 
-            console.log('------NEWGAME-----')
-            console.log('tajne cislo je', secretNumber)
+            messageE1.textContent = 'Hádej číslo od 1 do 20'
+            messageE1.style.color = 'black'
+
+            guessInput.disabled = false
+            guessBtn.disabled = false
+            guessInput.focus()
+
+            console.log('--- NEWGAME ---')
+            console.log('tajné číslo: ', secretNumber)
+        }
+
+        function endGame(win) {
+            guessInput.disabled = true
+            guessBtn.disabled = true
+
+            if (win) {
+                messageE1.style.color = 'green'
+            } else {
+                messageE1.style.color = 'red'
+            }
         }
 
         function checkGuess() {
-            attempts++
+            const guess = Number(guessInput.value)
+
+            if (!guess) {
+                messageE1.textContent = 'Zadej číslo'
+                return
+            }
+
+            attemtps++
             attemtpsE1.textContent = attemtps
+
+            console.log('pokus cislo: ', attemtps)
+
+            if (guess === secretNumber) {
+                messageE1.textContent = 'Vyhrál jsi.'
+                console.log('hrac vyhral')
+                endGame(true)
+                return
+            }
+
+            if (attemtps >= maxAttempts) {
+                messageE1.textContent = 'Došli ti pokusy'
+                console.log('dosli pokusy - hrac prohral')
+                return
+            }
+
+            if (guess < secretNumber) {
+                messageE1.textContent = 'Zkus větší číslo'
+            } else {
+                messageE1.textContent = 'Zkus menší číslo'
+            }
+
+            guessInput.value = ''
+            guessInput.focus()
         }
 
-        function hlaska() {
-            alert('pospes')
-        }
-
-        function support() {
-            window.setTimeout(hlaska, 3000)
-
-        }
-
-        document.getElementById('guessBtn').addEventListener('click', checkGuess)
-        document.getElementById('guess').addEventListener('keydown', function (e) {
+        guessBtn.addEventListener('click', checkGuess)
+        guessInput.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') {
                 checkGuess()
                 e.srcElement.value = ''
             }
         })
 
+        function alertMsg() {
+            alert('Pospěš si, hra běží.')
+        }
+
+        function support() {
+            window.setTimeout(alertMsg, 3000)
+
+        }
+
         newGame()
+
     </script>
 </body>
-
 </html>
