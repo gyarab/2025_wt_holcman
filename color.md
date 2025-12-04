@@ -1,7 +1,7 @@
-# World Athletics
+# On
 
-## Logo World Athletics
+## Logo On
 
-![World Athletics Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHDSWxwR5Y4Dzp-KEjUXZCbJADDmOQMl9J-A&s)
+![Logo On Running](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/On_Running_logo.svg/512px-On_Running_logo.svg.png)
 
-Logo World Athletics využívá výraznou kombinaci oranžové, růžové a fialové, které společně vytvářejí moderní a energický vizuální styl. Oranžová barva symbolizuje vitalitu, pohyb a odhodlání – tedy hodnoty úzce spjaté s atletikou jako dynamickým sportem. Růžové odstíny dodávají značce přístupnost, lidskost a otevřenost vůči široké sportovní komunitě. Fialová pak do celku přináší prvek prestiže a originality, díky čemuž logo působí současně profesionálně i inspirativně.
+Logo švýcarské značky On využívá minimalistický černobílý design, který vyjadřuje preciznost, čistotu a technickou dokonalost – hodnoty typické pro švýcarský design i samotnou filozofii značky. Černá barva zde symbolizuje stabilitu, profesionalitu a důvěru ve špičkovou kvalitu běžeckých bot a sportovního vybavení. Bílá pak vytváří kontrast, který působí moderně, lehce a inovativně, čímž podtrhuje charakter firmy zaměřené na technologické inovace a maximální výkon.
