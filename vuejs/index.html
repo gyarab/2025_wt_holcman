@@ -19,10 +19,10 @@
 
         <div id="app">
             <div class="card p-3 mb-3">
-                <form>
+                <form @submit.prevent="handleForm">
                     <div class="mb-3">
                         <label for="name">Jméno astronauta</label>
-                        <input class="form-control" id="name" name="name" type="text" v-model="trip.name">
+                        <input class="form-control" id="name" name="name" type="text" v-model="trip.name" placeholder="Jan Novak">
                     </div>
 
                     <div class="mb-3">
@@ -47,7 +47,7 @@
                         <label class="form-check-label" for="terms">Souhlasím s podmínkami</label>
                     </div>
 
-                    <button class="btn btn-primary w-100" type="button">Odeslat</button>
+                    <button class="btn btn-primary w-100" type="submit">Odeslat</button>
                 </form>
             </div>
 
@@ -79,6 +79,25 @@
                         days: 0,
                         accepted: false
                     }
+                    errors: {}
+                }
+            },
+            computed: {
+                isValid(){
+                    return !!this.trip.name        
+                }
+            }
+            methods: {
+                validate(){
+                    this.errors = {};
+                    if(!this.trip.name){
+                        this.errors.name = "Jméno je povinné";
+                    }
+                    return true
+                }
+                handleForm() {
+                    console.log("handling forms")
+                    this.validate()
                 }
             }
         });
