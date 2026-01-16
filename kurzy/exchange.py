@@ -1,4 +1,4 @@
-# import httpx
+import httpx
 
-# r = httpx.get("https://www.youtube.com/")
-# print(r.text)
+r = httpx.get("https://gyarab.github.io/2025_wt_holcman/")
+print(r.text)
