@@ -21,3 +21,4 @@ value_in = float(input("Kolik mas eur?"))
 value_out = value_in * rate
 
 print(f"Tak to je {value_out:.2f} korun.")
+#colorama
